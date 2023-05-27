@@ -136,3 +136,19 @@ input[type=checkbox] {
     }
 }
 
+/* transition property */
+.box {
+    margin: 200px;
+    width: 200px;
+    height: 200px;
+    background: #ef64e9;
+    transition-duration: 500ms;
+    transition-property: transform;
+    transition-timing-function: ease;
+    transition-delay: 2s;
+}
+
+.box:hover{
+    background: #40ed28;
+    transform: rotate(45deg);
+}
