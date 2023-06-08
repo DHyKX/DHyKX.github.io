@@ -137,7 +137,42 @@ input[type=checkbox] {
     }
 }
 
-/* transition property */
+/* transition property sliding square */
+
+.parent {
+    background-color: #e9a5f0;
+    height: 400px;
+    width: 400px;
+}
+.child {
+    background-color: #e93c21;
+    height: 50%;
+    width: 50%;
+}
+.parent:hover .child{
+    background-color: #e93c21;
+    /* transform: translateX(100%); */
+    animation: example 3s ease-in forwards 3 alternate;
+    /*same as 
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-direction: alternate;*/
+}
+
+@keyframes example{
+    /* 100%{transform: translateX(100%);} */
+    0%{transform: translateX(0%);}
+    33%{transform: translateY(100%);}
+    66%{transform: translateX(100%) translateY(100%);}
+    100%{transform: translateX(100%);}
+}
+
+
+
+/* transition property rotating square*/
 .box {
     margin: 200px;
     width: 200px;
