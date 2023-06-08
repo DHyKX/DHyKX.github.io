@@ -4,85 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="webstyle.css">
-    <title>Portfolio</title>
+    <meta http-equiv="refresh" content="0; url=./pages/index.html" />
+    <title>redirect</title>
 </head>
-<style type="text/css">
-    .parent {
-        background-color: #e9a5f0;
-        height: 400px;
-        width: 400px;
-    }
-    .child {
-        background-color: #e93c21;
-        height: 50%;
-        width: 50%;
-    }
-    .parent:hover .child{
-        background-color: #e93c21;
-        /* transform: translateX(100%); */
-        animation: example 3s ease-in forwards 3 alternate;
-        /*same as 
-        animation-name: example;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 3;
-        animation-direction: alternate;*/
-    }
-
-    @keyframes example{
-        /* 100%{transform: translateX(100%);} */
-        0%{transform: translateX(0%);}
-        33%{transform: translateY(100%);}
-        66%{transform: translateX(100%) translateY(100%);}
-        100%{transform: translateX(100%);}
-    }
-</style>
 <body>
-    <nav class="navbar">
-        <!--logo-->
-        <div class="logo">MUO</div>
-        <!--Nav Menu-->
-        <ul class="nav-links">
-            <!--Using Checkbox Hack-->
-            <input type="checkbox" id="checkbox_toggle" />
-            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-            <!--Nav Menu-->
-            <div class="menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="./pages/page1.html">About</a></li>
-                <li class="services"><a href="/">Services</a>
-                    <!--dropdown menu-->
-                    <ul class="dropdown">
-                        <li><a href="/">drop1</a></li>
-                        <li><a href="/">drop2</a></li>
-                        <li><a href="/">drop3</a></li>
-                        <li><a href="/">drop4</a></li>
-                        <li><a href="/">drop5</a></li>
-                    </ul>
-                </li>
-                <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
-                    
-            </div>
-        </ul>
-    </nav>
-
-    <div class="parent">
-        <div class="child"></div>
-    </div>
-
-    <div class="box"></div>
-
-     <!-- Hover effects -->
-    <div class="middle">
-       <a href="" class="btn btn1">hover 1</a>
-       <a href="" class="btn btn2">hover 2</a>
-       <a href="" class="btn btn3">hover 3</a>
-       <a href="" class="btn btn4">hover 4</a>
-    </div>
     
 </body>
 </html>
